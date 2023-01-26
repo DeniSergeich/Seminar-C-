@@ -1,6 +1,9 @@
 ﻿Console.Clear();
 Console.Write("Введите номер дня недели: ");
 int number = int.Parse(Console.ReadLine());
+if  (number < 1 || number > 7){
+    Console.WriteLine("Вы ввели неправильный номер!");
+}
 if (number == 1){
     Console.WriteLine("Понедельник");
 }
